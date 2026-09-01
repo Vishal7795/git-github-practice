@@ -28,3 +28,6 @@ jobs:
 
       - name: Run tests
         run: pytest app/
+
+      - name: Build Docker image
+        run: docker build -t git-github-demo .
